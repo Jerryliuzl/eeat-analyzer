@@ -1,0 +1,28 @@
+{
+  "name": "eeat-analyzer",
+  "version": "1.0.0",
+  "main": "analyze-page.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "cheerio": "^1.1.2",
+    "express": "^5.1.0",
+    "glob": "^11.0.3",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^24.14.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}

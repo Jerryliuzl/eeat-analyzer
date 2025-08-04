@@ -1,0 +1,22 @@
+﻿
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ 全域樣式 */
+html, body {
+    @apply bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ✅ 按鈕統一樣式 */
+button {
+    @apply transition-colors duration-200 text-lg;
+}
+
+/* ✅ 輸入框統一樣式 */
+input[type="text"] {
+    @apply border rounded-md px-4 py-2 text-lg focus:ring-2 focus:outline-none bg-white dark:bg-gray-700 dark:text-gray-100 dark:border-gray-600;
+}
