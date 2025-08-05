@@ -17,10 +17,10 @@ app.use('/api', searchPages);
 
 // Serve widget.js
 app.get('/widget.js', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'build', 'widget.js'));
+  res.sendFile(path.join(__dirname, 'frontend', 'build', 'widget.js'));
 });
 
-// （可選）也可以提供整個 build 讓本地測試 widget
+// Serve static assets (optional, for testing)
 app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
 // Server start
