@@ -16,7 +16,9 @@ app.use('/api', crawlPages);
 app.use('/api', searchPages);
 
 // Serve widget.js
-app.use('/widget.js', express.static(path.join(__dirname, 'frontend', 'build', 'widget.js')));
+app.get('/widget.js', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'widget.js'));
+});
 
 // （可選）也可以提供整個 build 讓本地測試 widget
 app.use(express.static(path.join(__dirname, 'frontend', 'build')));
